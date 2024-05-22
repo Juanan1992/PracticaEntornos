@@ -144,10 +144,10 @@ public class VentanaPrincipal extends javax.swing.JFrame {
             System.out.println(ex.toString());
         }
 
-        ControladorPelicula control = new ControladorPelicula(con);
+        ControladorPelicula c = new ControladorPelicula(con);
 
         try {
-            ArrayList<Pelicula> arrayPaLlenar = control.obtenerPeliculas();
+            ArrayList<Pelicula> arrayPaLlenar = c.obtenerPeliculas();
             DefaultTableModel modelo = (DefaultTableModel) tabla1.getModel();
             modelo.setNumRows(0);
 
